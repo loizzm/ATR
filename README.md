@@ -21,4 +21,11 @@ Além disso, diferentement do backend, o frontend foi requisitado que fosse feit
 npm i
 ```
 
+Após isso:
+```
+npm start
+```
+
 Por último, sobre as suposições feitas, assumi que não haveriam gastos de deslocamento, posto que a pessoa poderia andar até o canil. Além disso, como não ha informações sobre o meio tranposrte que seria usado, estimar um valor total levando em conta o transporte seria uma aproximação.
+
+O mais importante para se compartilhar sobre esse projeto, na minha opnião, é que essa foi uma boa oportunidade de colocar os conhecimentos em prática para desenvolver uma aplicação completa, apesar de ser, relativamente, simples. 
