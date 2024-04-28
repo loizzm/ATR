@@ -26,7 +26,7 @@ def init_db():
     return canis
 
 def convert_date(date):
-    date_object = datetime.strptime(date, "%d/%m/%Y")
+    date_object = datetime.strptime(date, "%Y/%m/%d")
     day_of_week = date_object.weekday()
     weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     return weekdays[day_of_week]
@@ -62,7 +62,9 @@ def get_melhor_canil():
             best_price = price
             canil_name = canil['name']
     
-    return jsonify({'melhor canil': canil_name, 'preco': best_price}), 200
+    response = jsonify({'melhor canil': canil_name, 'preco': best_price})
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response, 200
 
 if __name__ == '__main__':
     app.run(host="flaskapp", port=5000)
