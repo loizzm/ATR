@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  db_dti:
+    build: ./db
+    container_name: db_dti
+    restart: always
+    expose:
+       - 3306
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: dti
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_HOST: '%'
+  flask:
+    build: ./flask
+    depends_on: 
+      - db_dti
+    container_name: flaskapp
+    restart: always
+    ports:
+      - "5000:5000"
+    env_file: ./.env
+
