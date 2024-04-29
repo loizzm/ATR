@@ -1,21 +1,21 @@
 DTI_test
 ======================
 
-Primeiramente, acho válido destacar a escolha da linguagem de backend e o framekwork usado para desenvolver o teste. A linguagem escolhida foi o Python, tanto por razões de familiaridade com a ferramenta quanto pela facilidade de conceber a lógica e biblioteca disponíveis para facilitar a resolução do problema, como a biblioteca de datas por exemplo(para converter datas d/m/y em dias da semana). 
+Primeiramente, é válido destacar a escolha da linguagem de backend e do framework utilizados para desenvolver o teste. Optei pelo Python, tanto pela familiaridade com a ferramenta quanto pela facilidade de conceber a lógica, além da disponibilidade de bibliotecas para facilitar a resolução do problema, como a biblioteca de datas para converter datas de d/m/a em dias da semana.
 
-Dito isso, é relecante ser dito a razão por trás da escolha do framework Flask ao invés de Django. Bom como, essencialmente, o projeto a ser implementado era pequeno, o prazo era curto e não havia uma estrutura complexa de banco de dados ou sequer a necessidade de um. O Flask seria uma escoha mais acertada, tendo em vista sua flexibilidade e rápida prototipagem.
+Quanto à escolha do framework Flask em vez do Django, isso se deu pelo tamanho reduzido do projeto, o prazo curto e a ausência de uma estrutura complexa de banco de dados. O Flask foi uma escolha mais acertada devido à sua flexibilidade e capacidade de prototipagem rápida.
 
-Em segundo lugar, na implementação do backend, tentando diminuir o problema de dependências optei por usar Docker. Logo, o projeto, em tese, funcionará em qualquer OS e em qualquer máquina desde que possua Docker instalado. Para colocar o projeto no ar basta rodar o comando:
+Para diminuir problemas de dependências, optei por utilizar Docker na implementação do backend. Assim, o projeto funcionará em qualquer sistema operacional e em qualquer máquina desde que o Docker esteja instalado. Para colocar o projeto no ar, basta executar o comando:
 
 ```
 sudo docker compose up --build
 ```
 
-Ainda acerca do backend, não havia necessida, já que como eram poucos dados eles poderiam ser representados como constantes, mas mesmo assim, decidi usar bancos de dados, pois facilitaria escalabilidade da aplicação
+Embora houvesse a opção de representar os poucos dados como constantes, decidi utilizar bancos de dados para facilitar a escalabilidade da aplicação no futuro.
 
-Agora, quanto ao frontend, para facilitar e acelerar o desenvolvimento foi usada usada uma biblioteca de Forms do React para criar o formulário e verifcar os dados antes de serem enviados para a API do backend.
+No que diz respeito ao frontend, para agilizar o desenvolvimento, foi utilizada uma biblioteca de Forms do React para criar o formulário e verificar os dados antes de serem enviados para a API do backend.
 
-Além disso, diferentement do backend, o frontend foi requisitado que fosse feito em React, então assumi que em relação ao stack de JavaScript não haveria problemas de dependências. Para satisfazer as dependências do frontend basta rodar o comando:
+Diferentemente do backend, onde a escolha foi livre, o frontend foi requisitado em React. Assim, não previ problemas significativos com dependências em relação ao stack de JavaScript. Para satisfazer as dependências do frontend, basta executar o comando:
 
 ```
 npm i
@@ -26,6 +26,6 @@ Após isso:
 npm start
 ```
 
-Por último, sobre as suposições feitas, assumi que não haveriam gastos de deslocamento, posto que a pessoa poderia andar até o canil. Além disso, como não ha informações sobre o meio tranposrte que seria usado, estimar um valor total levando em conta o transporte seria uma aproximação.
+Por fim, sobre as suposições feitas, assumi que não haveria gastos com deslocamento, uma vez que a pessoa poderia caminhar até o canil. Além disso, como não há informações sobre o meio de transporte a ser utilizado, estimar um valor total levando em conta o transporte seria uma aproximação.
 
-O mais importante para se compartilhar sobre esse projeto, na minha opnião, é que essa foi uma boa oportunidade de colocar os conhecimentos em prática para desenvolver uma aplicação completa, apesar de ser, relativamente, simples. 
+Considero que esse projeto proporcionou uma boa oportunidade para aplicar conhecimentos na prática e desenvolver uma aplicação completa, apesar de sua relativa simplicidade.
