@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/loizzm/ATR/static/css/main.518072d7.css",
+    "main.js": "/loizzm/ATR/static/js/main.5b6c6a01.js",
+    "static/js/453.597d2a27.chunk.js": "/loizzm/ATR/static/js/453.597d2a27.chunk.js",
+    "index.html": "/loizzm/ATR/index.html",
+    "main.518072d7.css.map": "/loizzm/ATR/static/css/main.518072d7.css.map",
+    "main.5b6c6a01.js.map": "/loizzm/ATR/static/js/main.5b6c6a01.js.map",
+    "453.597d2a27.chunk.js.map": "/loizzm/ATR/static/js/453.597d2a27.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.518072d7.css",
+    "static/js/main.5b6c6a01.js"
+  ]
+}
